@@ -8,7 +8,7 @@ class Program
         double firstNum = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("\nInsert your operator: (+, -, *, /)");
-        char op = Convert.ToChar(Console.ReadLine());
+        char op = Convert.ToChar(Console.ReadLine() ?? "is not a char");
 
         Console.WriteLine("Insert your second number:");
         double secondNum = Convert.ToDouble(Console.ReadLine());
