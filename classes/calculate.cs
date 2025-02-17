@@ -1,23 +1,27 @@
 public class Calculator : Calc
 {
-    public interface Addition(double a, double b)
+    public double Addition(double a, double b)
     {
-        return a + b;
-    };
+        return a+b;
+    }
 
-    public interface Subtract(double a, double b)
+    public double Subtract(double a, double b)
     {
-        return a - b;
+        return a-b;
+    }
 
-    };
-
-    public interface Multiply(double a, double b)
+    public double Multiply(double a, double b)
     {
-        return a * b;
-    };
+        return a*b;
+    }
 
-    public interface Divide(double a, double b)
+    public double Divide(double a, double b)
     {
-        return a / b;
+        if (b == 0)
+        {
+            Console.WriteLine("Cannot Divide with zero tihi");
+            throw new Exception("Program Terminated :3");
+        }
+        return a/b;
     }
 };

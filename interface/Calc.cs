@@ -6,7 +6,7 @@ public interface Calc
  /// <param name="a">The value of "a"</param>
  /// <param name="b">The value of "b" </param>
  /// <returns>a + b</returns>
- double Addition(a, b)
+ double Addition(double a,double b);
 
 /// <summary>
 /// Subtracts two numbers togheter
@@ -14,7 +14,7 @@ public interface Calc
 /// <param name="a">The value of "a"</param>
 /// <param name="b">The value of "b"</param>
 /// <returns>a - b</returns>
- double Subtract(a, b)
+ double Subtract(double a,double b);
 
 /// <summary>
 /// Multiplies two numbers togheter
@@ -22,7 +22,7 @@ public interface Calc
  /// <param name="a">The value of "a"</param>
  /// <param name="b">The value of "b" </param>
 /// <returns></returns>
- double Multiply(a, b)
+ double Multiply(double a,double b);
 
 /// <summary>
 /// Divides two numbers togheter
@@ -30,5 +30,5 @@ public interface Calc
  /// <param name="a">The value of "a"</param>
  /// <param name="b">The value of "b" </param>
 /// <returns></returns>
- double Divide(a, b)
+ double Divide(double a,double b);
 };
